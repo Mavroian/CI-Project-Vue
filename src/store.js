@@ -27,6 +27,7 @@ export default new Vuex.Store({
         }));
         commit("setLocations", markers);
       } catch (err) {
+        /*eslint no-console: ["error", { allow: ["warn", "error"] }] */
         console.error(err);
       }
     },
